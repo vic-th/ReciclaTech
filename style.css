@@ -12,10 +12,6 @@ body {
   display: flex;
   justify-content: center;
 }
-.logo img {
-  width: 3.5vw;
-  height: 2.5vh;
-}
 .logo h1 {
   width: 10.365vw;
   height: 4.5vh;
@@ -32,9 +28,10 @@ header {
   display: flex;
   width: 100%;
   height: 10vh;
+  justify-content: center;
   padding-left: 2.313rem;
   padding-right: 2.438rem;
-  justify-content: center;
+  margin-bottom: 2.3rem;
 }
 header ul {
   list-style: none;
@@ -87,7 +84,7 @@ header button:hover {
   height: 50vh;
   padding: 0 2rem;
 }
-.slogan img {
+.slogan .logoRecicla {
   width: 22rem;
   height: auto;
   max-width: 500;
@@ -117,14 +114,15 @@ header button:hover {
 .slogan .botoes {
   display: flex;
   gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 .slogan #presente {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 11.813rem;
-  height: 3.875rem;
+  width: 8rem;
+  height: 3.87rem;
   padding: 0.75rem 1.25rem;
   border-radius: 0.375rem;
   border: 1px solid;
@@ -147,8 +145,8 @@ header button:hover {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 13.813rem;
-  height: 3.875rem;
+  width: 8rem;
+  height: 3.8rem;
   padding: 0.74rem 1.21rem;
   border-radius: 0.375rem;
   border: 1px solid;
@@ -168,12 +166,14 @@ header button:hover {
 }
 
 .estatisticas {
-  height: 5%;
+  height: auto;
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
   background-color: rgba(51, 51, 51, 0.168627451);
   gap: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -181,8 +181,11 @@ header button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2.5rem;
+  justify-content: center;
+  padding-top: 2rem;
   padding-bottom: 1rem;
+  min-width: 11.25rem;
+  max-width: 15rem;
 }
 .estatistica h2 {
   color: aliceblue;
@@ -221,8 +224,135 @@ header button:hover {
 }
 .info h3 {
   color: #D3DAD9;
+  text-align: center;
   font-family: "inter";
   font-weight: 400;
   font-size: 1.563rem;
   line-height: 125%;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 2rem;
+    margin-right: auto;
+    padding-left: auto;
+  }
+  .logo h1 {
+    width: 2.365vw;
+    height: 1.5vh;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 2.5vh;
+    line-height: 2.4rem;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    padding-left: 2.313rem;
+    padding-right: 2.438rem;
+    justify-content: center;
+  }
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+  header li {
+    padding-left: 3vh;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+    padding-right: 5vw;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #D3DAD9;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  header li:hover {
+    color: #D3DAD9;
+  }
+  header button {
+    justify-items: start;
+    text-align: center;
+    width: 5.813rem;
+    height: 3.75rem;
+    background-color: #DFD0B8;
+    border-radius: 6px;
+    border: 1px solid;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    padding-left: 22px;
+    gap: 4px;
+  }
+  header button:hover {
+    background-color: #c7b79d;
+  }
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    height: 50vh;
+    padding: 0 2rem;
+  }
+  .slogan .logoRecicla {
+    display: none;
+  }
+  .slogan h2 {
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+            user-select: text;
+    color: #DFD0B8;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .slogan h4 {
+    max-width: 700px;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+            user-select: text;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: #D3DAD9;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .estatisticas {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .estatistica {
+    width: 80%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
