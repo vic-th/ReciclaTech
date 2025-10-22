@@ -176,8 +176,8 @@ header button:hover {
   flex-wrap: wrap;
   background-color: rgba(51, 51, 51, 0.168627451);
   gap: 2rem;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-top: 2.813rem;
+  margin-bottom: 2.813rem;
 }
 
 .estatistica {
@@ -234,7 +234,7 @@ header button:hover {
   line-height: 125%;
 }
 
-.conteinerInfo {
+.boxInfo {
   display: flex;
   width: 100%;
   min-height: 8vh;
@@ -243,15 +243,14 @@ header button:hover {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
-  margin-top: 2rem;
 }
-.conteinerInfo .info {
+.boxInfo .info {
   width: 30.688rem;
   height: 20.063rem;
   background-color: rgba(51, 51, 51, 0.168627451);
   flex-direction: column;
 }
-.conteinerInfo .info .tituloInfo {
+.boxInfo .info .tituloInfo {
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -259,7 +258,7 @@ header button:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.conteinerInfo .info .tituloInfo img {
+.boxInfo .info .tituloInfo img {
   width: 1.3rem;
   height: 1.3rem;
   margin-right: 0.5rem;
@@ -268,7 +267,7 @@ header button:hover {
      -moz-user-select: none;
           user-select: none;
 }
-.conteinerInfo .info .tituloInfo #recebedorInfoImg {
+.boxInfo .info .tituloInfo #recebedorInfoImg {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 0.5rem;
@@ -277,14 +276,14 @@ header button:hover {
      -moz-user-select: none;
           user-select: none;
 }
-.conteinerInfo .info .tituloInfo h3 {
+.boxInfo .info .tituloInfo h3 {
   font-family: "inter";
   font-weight: 400;
   font-size: 1.563rem;
   line-height: 150%;
   color: #DFD0B8;
 }
-.conteinerInfo .info #subtitulo {
+.boxInfo .info #subtitulo {
   font-family: "Poppins";
   font-weight: 700;
   font-size: 1rem;
@@ -292,7 +291,7 @@ header button:hover {
   color: #DFD0B8;
   text-align: center;
 }
-.conteinerInfo .info #paragrafo {
+.boxInfo .info #paragrafo {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 1rem;
@@ -301,6 +300,89 @@ header button:hover {
   padding-bottom: 1rem;
   text-align: center;
   color: #FFFFFF;
+}
+
+.boxProdutos {
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(51, 51, 51, 0.2509803922);
+}
+.boxProdutos .tituloProdutos {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.188rem;
+  margin-bottom: 1rem;
+}
+.boxProdutos .tituloProdutos h2 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: bold;
+  font-size: 2.5rem;
+  color: #DFD0B8;
+}
+.boxProdutos .tituloProdutos h3 {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 1.563rem;
+  line-height: 150%;
+  color: #D3DAD9;
+}
+.boxProdutos .listaProdutos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.boxProdutos .listaProdutos .produtos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  width: 18.8rem;
+  height: 27.25rem;
+  margin-left: 3rem;
+  border: 2px solid #333;
+}
+.boxProdutos .listaProdutos .produtos img {
+  width: 18.414rem;
+  height: 14.613rem;
+}
+.boxProdutos .listaProdutos .produtos h4 {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #DFD0B8;
+  margin-top: 1.3rem;
+  padding-bottom: 0.7rem;
+}
+.boxProdutos .listaProdutos .produtos p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #D3DAD9;
+  padding-bottom: 1.313rem;
+}
+.boxProdutos .listaProdutos .produtos button {
+  width: 9.375rem;
+  height: 2.313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DFD0B8;
+  margin-left: 4.688rem;
+  margin-right: 4.688rem;
+  border-radius: 6px;
+}
+.boxProdutos .listaProdutos .produtos button:hover {
+  background-color: #c7b79d;
 }
 
 @media (max-width: 700px) {
@@ -362,31 +444,19 @@ header button:hover {
     text-align: center;
     width: 5.813rem;
     height: 3.75rem;
-    background-color: #DFD0B8;
     border-radius: 6px;
-    border: 1px solid;
-    cursor: pointer;
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 3px;
-    padding-left: 22px;
-    gap: 4px;
-  }
-  header button:hover {
-    background-color: #c7b79d;
+    padding-top: 0.313rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.188rem;
+    padding-left: 1.375rem;
+    gap: 0.25rem;
   }
   .slogan {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    outline: none;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
     height: 50vh;
     padding: 0 2rem;
+    margin-top: 4rem;
   }
   .slogan .logoRecicla {
     display: none;
@@ -394,24 +464,14 @@ header button:hover {
   .slogan h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    -webkit-user-select: text;
-       -moz-user-select: text;
-            user-select: text;
-    color: #DFD0B8;
     font-family: "Poppins";
     font-weight: 700;
     font-size: 2rem;
   }
   .slogan h4 {
-    max-width: 700px;
-    -webkit-user-select: text;
-       -moz-user-select: text;
-            user-select: text;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-    color: #D3DAD9;
+    margin-bottom: 0.8rem;
     font-family: "Inter";
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.4rem;
   }
   .slogan .botoes {
@@ -430,9 +490,6 @@ header button:hover {
     width: 2.2rem;
     height: 2.2rem;
   }
-  .slogan #presente:hover {
-    background-color: #c7b79d;
-  }
   .slogan #coracao {
     width: 9rem;
     height: 3.8rem;
@@ -443,20 +500,134 @@ header button:hover {
     width: 2.2rem;
     height: 2.2rem;
   }
-  .slogan #coracao:hover {
-    background-color: #c7b79d;
-  }
   .estatisticas {
     flex-direction: row;
     gap: 1rem;
     margin-top: 3rem;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 6rem;
   }
   .estatistica {
     width: 80%;
     padding: 1rem;
-    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .boxInfo {
+    display: flex;
+    width: 100%;
+    min-height: 8vh;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .boxInfo .info {
+    width: 30.688rem;
+    height: 20.063rem;
+    background-color: rgba(51, 51, 51, 0.168627451);
+    flex-direction: column;
+  }
+  .boxInfo .info .tituloInfo {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .boxInfo .info .tituloInfo img {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+  }
+  .boxInfo .info .tituloInfo h3 {
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+    margin-top: 1rem;
+  }
+  .boxInfo .info #subtitulo {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 100%;
+  }
+  .boxInfo .info #paragrafo {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .boxProdutos {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(51, 51, 51, 0.2509803922);
+  }
+  .boxProdutos .tituloProdutos {
+    flex-direction: column;
+    margin-top: 7.18rem;
+    margin-bottom: 1rem;
+  }
+  .boxProdutos .tituloProdutos h2 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 2.8rem;
+  }
+  .boxProdutos .tituloProdutos h3 {
+    font-family: "inter";
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+  .boxProdutos .listaProdutos {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxProdutos .listaProdutos .produtos {
+    display: flex;
+    flex-direction: column;
+    width: 18.8rem;
+    height: 27.25rem;
+    margin-bottom: 2rem;
+    border: 2px solid #333;
+  }
+  .boxProdutos .listaProdutos .produtos img {
+    width: 18.414rem;
+    height: 14.613rem;
+  }
+  .boxProdutos .listaProdutos .produtos h4 {
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #DFD0B8;
+    margin-top: 1.3rem;
+    padding-bottom: 0.7rem;
+  }
+  .boxProdutos .listaProdutos .produtos p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #D3DAD9;
+    padding-bottom: 1.313rem;
+  }
+  .boxProdutos .listaProdutos .produtos button {
+    width: 9.375rem;
+    height: 2.313rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFD0B8;
+    margin-left: 4.688rem;
+    margin-right: 4.688rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
