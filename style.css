@@ -590,6 +590,7 @@ header button:hover {
   .boxProdutos .listaProdutos {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .boxProdutos .listaProdutos .produtos {
     display: flex;
