@@ -90,6 +90,36 @@ background-color: #DFD0B8;
 
 }
 
+main{
+  
+  h2{
+    color: #DFD0B8;
+
+   
+
+    text-align: center;
+
+    margin-top: 3.188rem;
+
+      font-family: "Poppins";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 2.5rem;
+  }
+
+  h3{
+    color: #D3DAD9;
+    margin-top: 0.5rem;
+    text-align: center;
+
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 1.563rem;
+    line-height: 150%;
+  }
+  
+}
+
 .slogan {
   display: flex;
   flex-direction: column; 
@@ -229,7 +259,9 @@ img{
 
     gap: 2rem;
     
-    margin-top: 2.813rem;
+    padding-bottom: 5rem;
+
+    margin-top: 3.813rem;
   
     margin-bottom: 2.813rem;
 
@@ -241,6 +273,7 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
 
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -488,6 +521,9 @@ background-color:#33333340;
   img{
     width: 18.414rem;
     height: 14.613rem;
+
+     outline: none;
+     user-select: none;
   }
 
   h4{
@@ -531,11 +567,128 @@ button{
 
  
 }
+}
+}
+}
+.boxComentarios{
 
+  width: 100%;
+  height: auto;
+
+  display: flex;
+
+  justify-content: center;
+
+   outline: none;
+
+  .comentarios{
+  display: flex;
+
+  flex-direction: column;
+
+  width: 21.125rem;
+  height: 18.75rem;
+
+  margin-top: 4rem;
+ 
+
+  justify-content: center;
+
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 4px;
+  border-bottom: 1px;
+  
+  border-radius: 8px;
+
+ 
+  border: solid #333;
+
+
+
+  
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+     margin-left: 2.125rem;
+      margin-right: 3.125rem;
+
+    
+
+  #estrelas{
+    
+    
+    width: 7.5rem;
+    height: 1.5rem;
+    
+    margin-bottom: 1.188rem;
+     margin-left: 4rem;
+  }
+
+  #comentarios{
+    display: flex;
+    text-align: center;
+
+    
+      width: 15.563rem;
+      height: 7.5rem;
+
+      color: #D3DAD9;
+
+   
+    
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+  }
+
+.user{
+  display: flex; 
+  align-items: center; 
+  
+  justify-content: start; 
+
+  #imgTipoDeUser{
+  width: 1.5rem;
+  height: 1.5rem;
+
+  padding-right: 0.219rem;
+
+  margin-left: 5rem;
+
+  
+ user-select: none;  
+}
+ 
+  .userText{
+  #nome{
+  
+  color: #DFD0B8;
+
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 0.8;
+   line-height: 100%;
+}
+
+#tipoDeUser{
+  color: #D3DAD9;
+
+ 
+  
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 0.8;
+   line-height: 100%;
+}
+}
+}
 }
 }
 
-}
+
 
 @media (max-width: 700px) {
   
@@ -1058,5 +1211,5 @@ button{
 }
 }
 }
-  }
+}
 }
