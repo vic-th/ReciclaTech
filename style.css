@@ -484,6 +484,28 @@ main h3 {
   line-height: 100%;
 }
 
+.infoFinal {
+  background-color: #363a41;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.infoFinal button {
+  width: 11.813rem;
+  -webkit-hyphens: 2.75rem;
+          hyphens: 2.75rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  background-color: #DFD0B8;
+  color: #363a41;
+  padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+  gap: 0.625rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+.infoFinal button:hover {
+  background-color: #c7b79d;
+}
+
 @media (max-width: 700px) {
   .logo {
     display: flex;
