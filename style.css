@@ -626,6 +626,7 @@ footer .imgRedesSociais .imgFooterRedesSociais {
     border-bottom: 1px solid rgb(39, 37, 39);
   }
   footer .infoFooter h5 {
+    width: 90%;
     text-align: center;
   }
   footer .infoFooter p {
