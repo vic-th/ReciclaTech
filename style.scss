@@ -592,8 +592,12 @@ button{
 
   flex-direction: column;
 
-  width: 21.125rem;
-  height: 18.75rem;
+  width: 22rem; 
+  height: auto; 
+
+  max-width: 90vw; 
+  min-width: 280px; 
+
 
   margin-top: 4rem;
  
@@ -731,24 +735,170 @@ flex-wrap: wrap;
 
 footer{
 width: 100%;
-height: 21.563rem;
+height: auto;
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+
+
+
+padding: 2rem;
 
 background-color: #333;
 
 margin-top: 4rem;
 
-  img{
+
+
+  .titulosFooter{
+   
+    color: #FFFFFF;
+
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1rem;
+    line-height: 100%;
+
+    padding-bottom: 1.313rem;
+
+  }
+
+  
+
+.infoFooter{
+ 
+  h5{ flex-direction: column;
+  
+  color: #FFFFFF;
+
+  justify-content: start;
+
+  
+  padding-bottom: 0.5rem;
+
+  font-family: "inter";
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+ }
+
+p{
+  width: 14.25rem;
+  height:4.5rem;
+
+  color: #D3DAD9;
+
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+}
+}
+
+.FooterLinks{
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 2rem;
+
+
+ 
+ .infoFooterLinks{
+    width: 8rem;
+    height: 1.5rem;
+    
+    color: #D3DAD9;
+
+    gap: 6px;
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+  }
+
+}
+
+.FooterSuporte{
+
+   display: flex;
+  flex-direction: column;
+
+  margin-right: 2rem;
+
+
+.infoFooterSuporte{
+     width: 8rem;
+    height: 1.5rem;
+    
+    color: #D3DAD9;
+
+    gap: 6px;
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+}
+  
+}
+
+.FooterRedesSociais{
+
+     display: flex;
+  flex-direction: column;
+
+  margin-right: 2rem;
+ 
+
+.infoFooterRedesSociais{
+  
+       width: 8rem;
+    height: 1.5rem;
+    
+    color: #D3DAD9;
+
+    gap: 6px;
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+}
+
+ 
+}
+
+.imgRedesSociais{
+
+margin-top: 2rem;
+
+  .imgFooterRedesSociais{
+  
     width: 2rem;
     height: 2rem;
 
-    margin-left: 0.5rem;
-  }
+    gap: 1rem;
 
+    
+    
+    
+
+flex-direction: row;
+
+  margin-top: 1rem;
+    margin-left: 0.5rem;}
+}
 
 }
 
 @media (max-width: 700px) {
   
+ 
  .logo{
 
      display: flex;
@@ -1219,6 +1369,8 @@ main{
     width: 13.813rem;
    height:3.75rem;
   }
+
+
 }
 
 

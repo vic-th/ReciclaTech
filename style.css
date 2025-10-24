@@ -422,8 +422,10 @@ main h3 {
 .boxComentarios .comentarios {
   display: flex;
   flex-direction: column;
-  width: 21.125rem;
-  height: 18.75rem;
+  width: 22rem;
+  height: auto;
+  max-width: 90vw;
+  min-width: 280px;
   margin-top: 4rem;
   justify-content: center;
   border-top: 1px;
@@ -510,13 +512,96 @@ main h3 {
 
 footer {
   width: 100%;
-  height: 21.563rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
   background-color: #333;
   margin-top: 4rem;
 }
-footer img {
+footer .titulosFooter {
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1rem;
+  line-height: 100%;
+  padding-bottom: 1.313rem;
+}
+footer .infoFooter h5 {
+  flex-direction: column;
+  color: #FFFFFF;
+  justify-content: start;
+  padding-bottom: 0.5rem;
+  font-family: "inter";
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+footer .infoFooter p {
+  width: 14.25rem;
+  height: 4.5rem;
+  color: #D3DAD9;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+}
+footer .FooterLinks {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+footer .FooterLinks .infoFooterLinks {
+  width: 8rem;
+  height: 1.5rem;
+  color: #D3DAD9;
+  gap: 6px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+}
+footer .FooterSuporte {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+footer .FooterSuporte .infoFooterSuporte {
+  width: 8rem;
+  height: 1.5rem;
+  color: #D3DAD9;
+  gap: 6px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+}
+footer .FooterRedesSociais {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+footer .FooterRedesSociais .infoFooterRedesSociais {
+  width: 8rem;
+  height: 1.5rem;
+  color: #D3DAD9;
+  gap: 6px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+}
+footer .imgRedesSociais {
+  margin-top: 2rem;
+}
+footer .imgRedesSociais .imgFooterRedesSociais {
   width: 2rem;
   height: 2rem;
+  gap: 1rem;
+  flex-direction: row;
+  margin-top: 1rem;
   margin-left: 0.5rem;
 }
 
